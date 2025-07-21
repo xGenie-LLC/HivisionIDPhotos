@@ -22,4 +22,4 @@ RUN python3 scripts/download_model.py --models all
 EXPOSE 7860
 
 # ✅ 不带无效参数
-CMD ["python3", "-u", "app.py"]
+CMD ["python3", "-u", "app.py", "--host", "0.0.0.0", "--port", "7860"]
